@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d1cb7d;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            height: 100vh;
+        }
+
+        .product-card {
+            background-color: #acacac;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Изображение товара */
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Название товара */
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0 10px;
+        }
+
+        /* Описание товара */
+        .product-description {
+            font-size: 14px;
+            color: #ffffff;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        /* Цена товара */
+        .product-price {
+            font-size: 20px;
+            color: #5104ce;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Рейтинг */
+        .product-rating {
+            font-size: 16px;
+            color: #10e43e;
+            margin-bottom: 15px;
+        }
+
+        /* Кнопка */
+        .add-to-cart {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e60ba4;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Карточка товара -->
+    <article class="product-card">
+        <!-- Изображение -->
+        <div class="product-image">
+            <img src="cup.png" alt="Белая стеклянная кружка с надписью 'Разработчик года'">
+        </div>
+        <!-- Название товара -->
+        <h3 class="product-title">Абаюндная кружка</h3>
+        <!-- Описание товара -->
+        <p class="product-description">
+            Керамическая кружка белая. Пфф Абаюнда. Идеально подойдет для бабы Любы.я   
+        </p>
+        <!-- Цена -->
+        <div class="product-price">500 рублей</div>
+        <!-- Рейтинг -->
+        <div class="product-rating">★★★★☆ (4.5)</div>
+        <!-- Кнопка -->
+        <button class="add-to-cart">Добавить в корзину</button>
+    </article>
+</body>
+</html>
